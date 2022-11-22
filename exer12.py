@@ -22,6 +22,8 @@ else:
     print ('numero esta mais perto do 100')
 
 #numero escolhido é primo
+#para escolher precisa de uma estrutura de repetição
+
 
 
 
