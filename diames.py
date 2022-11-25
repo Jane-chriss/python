@@ -1,0 +1,1 @@
+diasemana = ('','segunda', 'terça', '')
