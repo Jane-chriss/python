@@ -31,10 +31,23 @@ if os.path.isfile(arquivo):
 #calculando total de custo
     totaldecusto = 0
     for prod in listaprodutos:
-        totaldecusto +=prod[9]
+        totaldecusto += prod[9]
     print(f'total de custo: {totaldecusto}')
-    
 
+#calcular valor total de venda apenas das cerevejas
+
+    totalvenda = 0
+    for prod in listaprodutos:
+        if 'cerveja' in str(prod[1]).lower():
+            totalvenda += prod[8]
+    print(f'total de venda: {totalvenda}')
+
+    #exibe apenas os produtos inativos
+    for prod in listaprodutos:
+        if prod[7] ==1:
+            print(prod)
+    
+    produtos.close()
 
 
 
