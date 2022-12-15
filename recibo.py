@@ -9,16 +9,16 @@ class Recibo:
     @property
     def valor(self):
         return(self._valor)
-
+        
     @valor.setter
     def valor(self, _valor):
         self._valor = _valor
 
     def __str__(self):
      
-        texto = f'recebemos de {self.nome} a quantia de R$ {self._valor}'
-        descricao = f'\nReferente {self._descricao}'
+        texto = f'recebemos de {self.nome} a quanto de R$ {self._valor}'
         titulo = 'Recibo'.center(len(texto), '*')
+        descricao = f'\nReferente {self._descricao}'
         dados = f' {titulo}\n{texto} {descricao}'
-        return(dados)
+        return(dado)
 
